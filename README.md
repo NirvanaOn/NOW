@@ -14,6 +14,42 @@ Every byte value (0x00–0xFF) maps to a unique word, derived from a **secret se
 
 ---
 
+<div align="center">
+
+# 📝 NØW
+
+### Natural Output Words
+
+*Where shellcode becomes prose.*
+
+<br>
+
+![Version](https://img.shields.io/badge/version-2.2-blue)
+![Language](https://img.shields.io/badge/language-C-success)
+![Platform](https://img.shields.io/badge/platform-Windows-informational)
+![Cipher](https://img.shields.io/badge/cipher-RC4%20%7C%20AES--256--CTR-orange)
+![Word Pool](https://img.shields.io/badge/word%20pool-256%20Words-purple)
+![Output](https://img.shields.io/badge/output-Natural%20Prose-brightgreen)
+![Status](https://img.shields.io/badge/status-Active%20Research-red)
+
+<br>
+
+![Input](https://img.shields.io/badge/input-Hex%20%7C%20BIN-blue)
+![Output Formats](https://img.shields.io/badge/output-TXT%20%7C%20BIN%20%7C%20HEX-yellow)
+![Architecture](https://img.shields.io/badge/architecture-x64-lightgrey)
+![Compiler](https://img.shields.io/badge/compiler-MSVC-success)
+
+</div>
+
+---
+
+
+> NØW is a word-based shellcode encoding and obfuscation tool that transforms raw shellcode bytes into natural-looking English prose. Using a secret sentence, password, and stream cipher (RC4 or AES-256-CTR), the original shellcode can be encoded into readable text and later recovered through the reverse process.
+>
+> Intended for **security research, malware analysis, red-team experimentation, and CTF development**.
+
+
+---
 
 ## How It Works
 
