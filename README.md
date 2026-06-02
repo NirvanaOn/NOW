@@ -229,3 +229,5 @@ Main menu:
 - Shellcode execution (`platform.c`) is Windows-only and requires explicit user confirmation at runtime
 
 ---
+
+Medium : https://medium.com/@0xnirsec
