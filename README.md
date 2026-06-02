@@ -42,20 +42,20 @@ Decryption reverses the process — it reads the text, strips punctuation and co
 <img width="1897" height="974" alt="1" src="https://github.com/user-attachments/assets/fa08aecf-35c6-41eb-b305-f5157df1468d" />
 
 
-In the image above, we encrypted a shellcode using the NØW Word-Based Shellcode Tool. The original shellcode was first encrypted using the selected stream cipher (RC4 in this example) with the password "nirvana". After encryption, each encrypted byte was mapped to words from a predefined word pool, producing a block of natural-looking text instead of obvious shellcode bytes.
+In the image above, we encrypted a shellcode using the **NØW Word-Based Shellcode Tool**. The original shellcode was first encrypted using the selected stream cipher (**RC4** in this example) with the password **"nirvana"**. After encryption, each encrypted byte was mapped to words from a predefined word pool, producing a block of natural-looking text instead of obvious shellcode bytes.
 
-The generated output appears as normal prose containing words such as hope, bottle, spiral, fog, ink, and snow. However, this text is not meant to be read as a meaningful paragraph. Each word represents an encrypted byte value, and the sequence of words preserves the encrypted shellcode data.
+The generated output appears as normal prose containing words such as *hope*, *bottle*, *spiral*, *fog*, *ink*, and *snow*. However, this text is not meant to be read as a meaningful paragraph. Each word represents an encrypted byte value, and the sequence of words preserves the encrypted shellcode data.
 
 During decryption, the tool performs the reverse process:
 
-1.Convert the words back into their corresponding byte values.
-2.Reconstruct the encrypted shellcode byte stream.
-3.Use the same password and stream cipher settings (RC4) to decrypt the data.
-4.Recover the original shellcode exactly as it was before encryption.
+1. Convert the words back into their corresponding byte values.
+2. Reconstruct the encrypted shellcode byte stream.
+3. Use the same password and stream cipher settings (**RC4**) to decrypt the data.
+4. Recover the original shellcode exactly as it was before encryption.
 
 This technique transforms shellcode into human-readable text, making the payload appear less suspicious than a raw hexadecimal byte array while still allowing the original shellcode to be reconstructed when the correct password and cipher settings are supplied.
 
-**Note**: Only English words should be used in the secret sentence. Non-English characters (Chinese, Japanese, Arabic, emojis, etc.) may cause encoding or parsing issues and can break the encryption/decryption process. Use standard English ASCII text for reliable results.
+> **Note:** Only English words should be used in the secret sentence. Non-English characters (Chinese, Japanese, Arabic, emojis, etc.) may cause encoding or parsing issues and can break the encryption/decryption process. Use standard English ASCII text for reliable results.
 
 ### Encrypted Text
 
