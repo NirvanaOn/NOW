@@ -1,0 +1,51 @@
+First Key to Unlock Payload:
+
+The old lighthouse keeper had not seen another human face in over seven years, not since the strange fog rolled in from the sea and never left. Every morning he climbed the spiral staircase with a bucket of oil and a prayer on his lips, polishing the great lens until it shone like a dying star. The birds had stopped coming long ago, and the fish had vanished from the waters below, leaving only silence and the constant moan of waves against broken stone. One night he found a bottle washed up on the rocky shore, sealed with red wax and containing a map drawn on leather. The map showed an island that did not exist, marked with a single word written in faded ink: Eden. He laughed at first, thinking it was a prank or a ghost story, but something in his chest ached with a hope he had buried years ago. So he packed a bag with dried meat, fresh water, a compass that spun in circles, and the old revolver his father had used in the war. He stepped into a rowboat as the sun bled orange and purple across the horizon, pushing off without looking back. The fog swallowed him whole, and for three days he saw nothing but gray mist and his own trembling hands. On the fourth morning he woke to the sound of bells ringing softly in the distance, and the air smelled of honey and rain. Before him stood a forest where the trees had silver leaves and the grass sparkled like broken glass. A path of white stones led into the shadows, and at the end of that path waited something he could not name but had always known. He whispered a prayer to no god in particular, took a deep breath, and stepped forward into the impossible.
+
+Payload: 
+
+fc4883e4f0e8c0000000415141505251564831d265488b5260488b5218488b5220488b7250480fb74a4a4d31c94831c0ac3c617c022c2041c1c90d4101c1e2ed524151488b52208b423c4801d08b80880000004885c074674801d0508b4818448b40204901d0e35648ffc9418b34884801d64d31c94831c0ac41c1c90d4101c138e075f14c034c24084539d175d858448b40244901d066418b0c48448b401c4901d0418b04884801d0415841585e595a41584159415a4883ec204152ffe05841595a488b12e957ffffff5d48ba0100000000000000488d8d0101000041ba318b6f87ffd5bbf0b5a25641baa695bd9dffd54883c4283c067c0a80fbe07505bb4713726f6a00594189daffd563616c632e65786500
+
+
+RC4 Encryption :
+
+Laughed hope polishing whispered, do how, nevertheless for bottle partly, nowhere bottle, certainly bottle woke? Initially, spiral woke, ringing fog, mainly spiral who. Hope whole initially horizon purple, hope ink meanwhile fog likewise waited.
+
+ Although, hope ink fog, consequently your namely hope moreover ink, moreover fog will, mainly hope. Currently, ink year especially ringing hope, trembling path take, additionally take written, nonetheless whole originally good hope. Whole for vanished all, one he glass other, similarly will!
+
+ Woke waves, otherwise good particularly before, mostly woke initially white. Indirectly, waves great ago, especially fog woke spiral hope, likewise ink nonetheless fog. Initially, will ink shore otherwise all hope, probably white regardless birds ink its, partly them initially bottle, accordingly bottle.
+
+ Additionally, basically bottle hope never, for meanwhile would these, indirectly hope white, birds anyhow ringing ink hope. Your any originally ink, regardless faded consequently will mist, likewise white birds they, equally who. Obviously, hope this good previously woke, likewise ink leaving, accordingly them hope.
+
+ White map written whole, recently good eventually hope, whole for, vanished woke. Immediately, waves good moreover before, mainly woke white, nonetheless waves everywhere come three. Bucket go see, immediately star notably see, dying hands accordingly work.
+
+ Meanwhile, when impossible bucket deep, namely word any. Especially, ink faded dying mist white, subsequently birds used, originally woke? Ink revolver, hope any ink, originally faded grass accordingly mist, white birds?
+
+ Consequently, woke ink known them, therefore hope white birds, recently woke word, woke initially word. Regardless, him packed namely bag woke, specifically word consequently woke packed woke, although bag hope, polishing father? Partly, will woke fog, this three word namely woke.
+
+ Mainly, packed bag hope ink, subsequently then their forest. This, everywhere this, somewhere this years, hope pushing white, otherwise bottle, currently bottle, basically bottle. recently Bottle, mainly bottle, nonetheless bottle, likewise bottle recently hope, certainly another, indeed another white, everywhere white bottle, previously bottle woke.
+
+ Accordingly, pushing whole ink, currently we anyhow rolled this perhaps because, eventually people particularly do. Everywhere, constant war who woke, regardless pushing found long nowhere own, saw likewise this, because hope! Subsequently, polishing staircase mostly stones immediately all partly some, immediately he!
+
+ Nonetheless, than its namely waters otherwise three bucket, coming people initially my rowboat, otherwise year indirectly we. Something bottle packed, partly woke stone say, elsewhere this because. Leather one orange, leather up purple, partly an purple, bottle.
+
+
+
+
+
+
+AES Encryption
+
+Accordingly, polishing her found differently time faded, used recently she if, recently if. notably If woke looking nevertheless woke fresh, mainly on looking years her strange. Chiefly, you buried similarly her fog otherwise on, indirectly after her fog on, recently impossible originally her regardless fog on. Importantly, first her furthermore fog but, fresh her want, trees since, alternatively since probably ink strange red, mainly her strange.
+
+ She keeper mostly from use, bled how these perhaps first woke, currently god. Red our woke mainly softly god, spun probably distance although on partly woke looking, chiefly her fog? On first fog seven from, her softly of. Fog compass moan, everywhere if, nowhere if, mostly if her leaves!
+
+ Probably, she broken constant her softly of, fresh fog nonetheless her impossible, regardless can fog. Mainly, stood first everywhere me, consequently softly of importantly this years her, bells. Namely, red woke perhaps fog anyhow another moan, probably her softly get ink? Strange red alternatively her somewhere strange, she keeper woke god red, our woke regardless softly god other could.
+
+ Star be bottle because bottle, what stones took great days, star eden their? Likewise, can fog stood what, notably me basically softly of, path woke importantly fog, think her can whereas fog, moreover stood. Two me softly previously of woke, regardless fog everywhere where moan, her softly of. Anyhow, woke their woke, their fish fourth, written woke.
+
+ Otherwise, their woke fourth, therefore woke written her specifically found, specifically they first. Obviously, woke on bells probably could their, woke fourth written her fog prank. Forward shore bells, certainly bells, otherwise bells before her, own softly if, whereas if. eventually If, regardless if, although if, partly if, although if her something, elsewhere something specifically softly, mostly softly.
+
+ If, nonetheless if woke chiefly own, strange fog night notably had bells, mostly ago them recently faded know whole, especially years. Nevertheless, woke own chiefly look for dying, his bells previously ago her, found leaving. Equally, rain from known bled come, compass rocky notably could likewise star, father them silence, until. Alternatively, but night white if partly fourth woke, stopped elsewhere now bells ago.
+
+ Seen use my, seen who buried prayer, buried especially if.
