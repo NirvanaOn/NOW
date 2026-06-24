@@ -368,7 +368,6 @@ static const char* ciphertext =
 
 
 int main(void) {
-    printf("=== NØW AES-256-CTR Decryptor ===\n");
     printf("AES-256-CTR | SHA-256 key derivation | Word-based steganography\n\n");
 
     if (!init_word_mapping(secret_sentence, password)) {
