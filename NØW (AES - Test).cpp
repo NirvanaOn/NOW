@@ -316,14 +316,6 @@ static size_t decrypt_shellcode(const char* text, unsigned char** output, int ve
     return out_pos;
 }
 
-static int is_printable_text(const unsigned char* data, size_t length) {
-    for (size_t i = 0; i < length; ++i) {
-        unsigned char c = data[i];
-        if (c == '\n' || c == '\r' || c == '\t') continue;
-        if (!isprint(c)) return 0;
-    }
-    return 1;
-}
 
 static void wait_for_enter(const char* prompt) {
     if (prompt && prompt[0]) printf("%s", prompt);
@@ -392,7 +384,7 @@ int main(void) {
 
     unsigned char* decoded = NULL;
     DecryptStats stats;
-    size_t decoded_len = decrypt_shellcode(ciphertext_buf, &decoded, 1, &stats);
+    size_t decoded_len = decrypt_shellcode(ciphertext_buf, &decoded, 0, &stats);
     free(ciphertext_buf);
     ciphertext_buf = NULL;
 
@@ -404,13 +396,6 @@ int main(void) {
 
     printf("\n[+] Decoded %llu bytes (codewords=%d, noise_skipped=%d).\n\n",
         (unsigned long long)decoded_len, stats.codewords, stats.noise_skipped);
-
-    if (is_printable_text(decoded, decoded_len)) {
-        wait_for_enter("Press <Enter> to display decoded text...\n");
-        printf("\n=== Decoded Text ===\n%.*s\n", (int)decoded_len, decoded);
-        free(decoded);
-        return EXIT_SUCCESS;
-    }
 
     wait_for_enter("\nPress <Enter> to allocate executable memory...\n");
 
