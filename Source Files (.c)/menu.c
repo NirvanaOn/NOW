@@ -235,7 +235,7 @@ void action_decrypt(void) {
 }
 
 void print_help(void) {
-    printf("\n======== NØW v2.2 ========\n");
+    printf("\n NOW v2 \n");
     printf("Each shellcode byte (0x00-0xFF) maps to one codeword.\n");
     printf("\nStream cipher (shuffles which word = which byte):\n");
     printf("  RC4          -> same as RC4ENC.exe / RC4DEC.exe\n");
@@ -244,11 +244,10 @@ void print_help(void) {
     printf("\nOutput style 0 = plain words (closest to RC4ENC when using RC4).\n");
     printf("Styles 1-3 = natural prose (. , ! ? only).\n");
     printf("\nNote: Word pool padding differs from RC4ENC/AESENC (extended word list).\n");
-    printf("Use NØW for both encrypt and decrypt for reliable results.\n");
-    printf("================================\n");
+    printf("Use NOW for both encrypt and decrypt for reliable results.\n");
 }
 
 void print_banner(void) {
-    printf("\n  NØW v2.2 - Word-Based Shellcode Tool\n");
+    printf("\n  NOW v2 - Word-Based Shellcode Tool\n");
     printf("  RC4 or AES stream | Natural prose output\n\n");
 }
